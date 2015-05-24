@@ -1,0 +1,19 @@
+{
+    "documentation": {
+        "description" : "For internal tests only - Do not use as Fiori launchpad configuration sample - BootstrapConfigPersonalizationSandbox.json: Use sandbox adapter for personalization",
+        "configURL" :"https://<host>:<port>/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/FioriConfigFileExamples/BootstrapConfigPersonalizationSandbox.json",
+        "startupURL" : "https://<host>:<port>/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/FioriConfigFileExamples/BootstrapConfigPersonalizationSandbox.json#",
+        "localStartupURL" : "http://localhost:8080/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/FioriConfigFileExamples/BootstrapConfigPersonalizationSandbox#"
+    },
+     "modulePaths": {
+         "sap.ui2.srvc" :  "/sap/public/bc/ui2/services/sap/ui2/srvc",
+         "sap.ushell.adapters.sandbox": "/sap/bc/ui5_demokit/test-resources/sap/ushell/adapters/sandbox"
+     },
+     "services": {
+         "Personalization": {
+             "adapter": {
+                 "module":  "sap.ushell.adapters.sandbox.PersonalizationAdapter"
+             }
+          }
+     }
+}

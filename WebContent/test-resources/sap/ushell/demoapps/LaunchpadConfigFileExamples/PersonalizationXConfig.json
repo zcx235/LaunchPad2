@@ -1,0 +1,28 @@
+{
+    "description" : "This sample configuration exchanges the PersonalizationAdapter with the PersonalizationXAdapter ",
+    "startmeup" : "https://ldciu31.wdf.sap.corp:44336/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/FioriConfigFileExamples/PersonalizationXConfig.json#Action-toappperssample",
+    "startmeuplocal" : "http://localhost:8080/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/FioriConfigFileExamples/PersonalizationXConfig.json#Action-toappperssample",
+                "renderers": {
+                    "fiori2" : {
+                        "componentData": {
+                            "config": {
+                                "enablePersonalization": true,
+                                "enableSearch": true,
+                                "enableTilesOpacity": true,
+                                "enableHideGroups": false,
+                                "enableSetTheme": false,
+                                "enableAccessibility": true,
+                                "enableSendFeedback": false,
+                                "enableTagFiltering": true
+                            }
+                        }
+                    }
+                },
+                "services" : {
+                    "Personalization": {
+                        "adapter": {
+                            "module": "sap.ushell_abap.adapters.abap.PersonalizationXAdapter"
+                        }
+                    }
+                }
+}

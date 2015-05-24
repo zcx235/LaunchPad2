@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0"
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:DataServices m:DataServiceVersion="2.0"
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+        <Schema Namespace="Z_DEEP_STRUCTURE2_SRV" xml:lang="en"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="ZSTR1_HEADER" sap:content-version="1"
+                xmlns:sap="http://www.sap.com/Protocols/SAPData">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="NAME2" Type="Edm.String" Nullable="false" MaxLength="30"/>
+                <Property Name="NAME1" Type="Edm.String" Nullable="false" MaxLength="30"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="10"/>
+                <NavigationProperty Name="HeaderToItem0" Relationship="Z_DEEP_STRUCTURE2_SRV.Header_Item0" FromRole="FromRole_Header_Item0" ToRole="ToRole_Header_Item0"/>
+            </EntityType>
+            <EntityType Name="ZSTR1_ITEM0" sap:content-version="1"
+                xmlns:sap="http://www.sap.com/Protocols/SAPData">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="NAME" Type="Edm.String" Nullable="false" MaxLength="30"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="10"/>
+            </EntityType>
+            <Association Name="Header_Item0" sap:content-version="1"
+                xmlns:sap="http://www.sap.com/Protocols/SAPData">
+                <End Type="Z_DEEP_STRUCTURE2_SRV.ZSTR1_HEADER" Multiplicity="*" Role="FromRole_Header_Item0"/>
+                <End Type="Z_DEEP_STRUCTURE2_SRV.ZSTR1_ITEM0" Multiplicity="*" Role="ToRole_Header_Item0"/>
+            </Association>
+            <EntityContainer Name="Z_DEEP_STRUCTURE2_SRV" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="Item0Set" EntityType="Z_DEEP_STRUCTURE2_SRV.ZSTR1_ITEM0" sap:content-version="1"
+                    xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+                    <EntitySet Name="HeaderSet" EntityType="Z_DEEP_STRUCTURE2_SRV.ZSTR1_HEADER" sap:content-version="1"
+                        xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+                        <AssociationSet Name="Header_Item0Set" Association="Z_DEEP_STRUCTURE2_SRV.Header_Item0" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"
+                            xmlns:sap="http://www.sap.com/Protocols/SAPData">
+                            <End EntitySet="HeaderSet" Role="FromRole_Header_Item0"/>
+                            <End EntitySet="Item0Set" Role="ToRole_Header_Item0"/>
+                        </AssociationSet>
+                    </EntityContainer>
+                    <atom:link rel="self" href="http://localhost:8080/webidedispatcher/destinations/EC7/sap/opu/odata/sap/Z_DEEP_STRUCTURE2_SRV/$metadata"
+                        xmlns:atom="http://www.w3.org/2005/Atom"/>
+                        <atom:link rel="latest-version" href="http://localhost:8080/webidedispatcher/destinations/EC7/sap/opu/odata/sap/Z_DEEP_STRUCTURE2_SRV/$metadata"
+                            xmlns:atom="http://www.w3.org/2005/Atom"/>
+                        </Schema>
+                    </edmx:DataServices>
+                </edmx:Edmx>

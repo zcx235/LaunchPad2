@@ -1,0 +1,11 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="sap.ui.Z_DEEP2.view.Master" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" id="master_page">
+		<content>
+			<Input id="id" value="{ID}"></Input>
+			<Input id="name1" value="{NAME1}"></Input>
+			<Input id="name2" value="{NAME2}"></Input>
+			<Button press="change"></Button>
+		</content>
+	</Page>
+</core:View>

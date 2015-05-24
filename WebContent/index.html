@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex"  
+				data-sap-ui-resourceroots='{
+				"sap.ui.ZTime_Entry": "./"}'>
+		</script>
+		<link href="css/error.css" rel="stylesheet" type="text/css"/>
+		<link href="css/cell.css" rel="stylesheet" type="text/css"/>		
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+//			var model = new sap.ui.model.json.JSONModel();
+//			sap.ui.getCore().setModel(model, "logondata");
+//		
+//			var view = sap.ui.view({
+//				id: "logon",
+//				viewName: "sap.ui.ZTime_Entry.view.Logon",
+//				type: sap.ui.core.mvc.ViewType.XML
+//			});
+//			view.placeAt("content");
+
+
+//			new sap.ui.core.ComponentContainer({
+//					name : "sap.ui.ZTime_Entry"
+//				}).placeAt("content");
+			new sap.ui.unified.Shell({
+				app : new sap.ui.core.ComponentContainer({
+					name : "sap.ui.ZTime_Entry"
+				})
+			}).placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- This file is at 
+       /sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/LaunchpadConfigFileExamples/LaunchpadConfigExamples.html -->
+      <title>Sample unified shell configurations</title>
+   </head>
+    <body>
+    Demonstration page for Fiori launchpad configuration using different methods to apply these:
+
+    <h1> Run Standalone </h1>
+    <a href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120#Shell-runStandaloneApp?sap-ushell-SAPUI5.Component=sap.ushell.demo.AppNavSample&sap-ushell-url=%252Fsap%252Fbc%252Fui5_demokit%252Ftest-resources%252Fsap%252Fushell%252Fdemoapps%252FAppNavSample%253FA%253DURL%2526A%253DTAP%2526B%253DTAP%2526AA%253DTAP">
+      Standalone start AppNavSample (with full shell)
+    </a>
+    <br/>
+    <a href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config=headerless#Shell-runStandaloneApp?sap-ushell-SAPUI5.Component=sap.ushell.demo.AppNavSample&sap-ushell-url=%252Fsap%252Fbc%252Fui5_demokit%252Ftest-resources%252Fsap%252Fushell%252Fdemoapps%252FAppNavSample%253FA%253DURL%2526A%253DTAP%2526B%253DTAP%2526AA%253DTAP">
+ <!--    https://iltlvw2747.dhcp.tlv.sap.corp:55000/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-locale=en&sap-rtl=&sap-client=001&sap-language=EN#Shell-runStandaloneApp?sap-ushell-SAPUI5.Component=cus.crm.opportunity&sap-ushell-url=/sap/bc/ui5_ui5/sap/crm_opprtnty) --> 
+      Standalone start AppNavSample (headerless)
+    </a>
+    <br/>
+    <a href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config=embedded#Shell-runStandaloneApp?sap-ushell-SAPUI5.Component=sap.ushell.demo.AppNavSample&sap-ushell-url=%252Fsap%252Fbc%252Fui5_demokit%252Ftest-resources%252Fsap%252Fushell%252Fdemoapps%252FAppNavSample%253FA%253DURL%2526A%253DTAP%2526B%253DTAP%2526AA%253DTAP">
+      Standalone start AppNavSample (embedded)
+    </a>
+    <h1> Sample configurations </h1>
+    <a href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=cfg/sap/PersonalizationOff.json">
+      Personalization Off (cfg/sap/PersonalizationOff.json)
+    </a>
+    <br/>
+    <a href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps//sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/LaunchpadConfigFileExamples/headerless.json#Shell-runStandaloneApp?sap-ushell-SAPUI5.Component=sap.ushell.demo.AppNavSample&sap-ushell-url=%252Fsap%252Fbc%252Fui5_demokit%252Ftest-resources%252Fsap%252Fushell%252Fdemoapps%252FAppNavSample%253FA%253DURL%2526A%253DTAP%2526B%253DTAP%2526AA%253DTAP">
+      Headerless via file (demokit example)
+    </a>
+    <br/>
+    <a href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/LaunchpadConfigFileExamples/PersonalizationXConfig.json#Action-toappperssample">
+      PersonalizationXAdapter (demokit example)
+    </a>
+    <br/>
+    <h1> Direct redirect via replace</h1>
+      <br/>
+    Link to a page which will perform a redirect via replace to add url parameters, (thus not showing up in browser history). 
+    see <a href="http://scn.sap.com/docs/DOC-55028">http://scn.sap.com/docs/DOC-55028</a>:
+    <br/>
+    <a href="ExampleDirectRedirectReplace.html">ExampleDirectRedirect.html</a>
+    </body>
+</html>

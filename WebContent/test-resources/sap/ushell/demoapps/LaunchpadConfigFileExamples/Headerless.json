@@ -1,0 +1,17 @@
+{
+    "documentation": {
+        "description" : "This sample configuration switches to headerless mode ",
+        "configURL" :"https://<host>:<port>/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/LaunchpadConfigFileExamples/headerless.json",
+        "startupURL" : "https://<host>:<port>/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/LaunchpadConfigFileExamples/headerless.json#Action-toappperssample",
+        "localStartupURL" : "http://localhost:8080/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=120&sap-ushell-config-url=/sap/bc/ui5_demokit/test-resources/sap/ushell/demoapps/LaunchpadConfigFileExamples/headerless.json#Action-toappperssample"
+    },
+    "renderers": {
+        "fiori2" : {
+            "componentData": {
+                "config": {
+                    "appState" : "headerless"
+                }
+            }
+        }
+    }
+}
